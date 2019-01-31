@@ -23,6 +23,8 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        new LoadingTask(this).execute(5);
+
         databaseHandler = new DatabaseHandler(this);
 
         usernameEditText = findViewById(R.id.usernameEditText);
@@ -38,7 +40,6 @@ public class LoginActivity extends AppCompatActivity {
             ((CheckBox) findViewById(R.id.rememberMeCheckBox)).setChecked(true);
 
         }
-
     }
 
     public void loginHandler(View view) {

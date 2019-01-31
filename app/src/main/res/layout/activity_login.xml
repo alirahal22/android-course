@@ -31,6 +31,24 @@
         app:layout_constraintStart_toStartOf="@+id/usernameLabel"
         app:layout_constraintTop_toBottomOf="@+id/usernameLabel" />
 
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="signUpHandler"
+        android:text="Sign Up"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/button"
+        app:layout_constraintVertical_bias="1.0" />
+
     <TextView
         android:id="@+id/usernameLabel"
         android:layout_width="wrap_content"
@@ -94,23 +112,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.574" />
 
-    <Button
-        android:id="@+id/signUpButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:onClick="signUpHandler"
-        android:text="Sign Up"
-        app:layout_constraintBottom_toBottomOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.02"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toTopOf="@+id/button"
-        app:layout_constraintVertical_bias="1.0" />
 
     <CheckBox
         android:id="@+id/rememberMeCheckBox"
@@ -128,4 +129,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.682" />
+
+    <TextView
+        android:id="@+id/loadingTextView"
+        android:elevation="2dp"
+        android:layout_width="0dp"
+        android:layout_height="514dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
